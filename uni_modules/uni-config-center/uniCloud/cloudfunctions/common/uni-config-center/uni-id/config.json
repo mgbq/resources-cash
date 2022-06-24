@@ -1,0 +1,55 @@
+{
+	"passwordSecret": [{
+		"version": 1,
+		"value": "ny.unicloud.password.secret"
+	}],
+	"tokenSecret": "ny.unicloud.token.secret",
+	"tokenExpiresIn": 259200,
+	"tokenExpiresThreshold": 600,
+	"passwordErrorLimit": 600,
+	"passwordErrorRetryTime": 3600,
+	"autoSetInviteCode": false,
+	"forceInviteCode": false,
+	"bindTokenToDevice": false,
+	"app-plus": {
+		"tokenExpiresIn": 2592000,
+		"oauth": {
+			"weixin": {
+				"appid": "weixin appid",
+				"appsecret": "weixin appsecret"
+			}
+		}
+	},
+	"mp-weixin": {
+		"tokenExpiresIn": 259200,
+		"oauth": {
+			"weixin": {
+				"appid": "wx5bdaf4582f09380e",
+				"appsecret": "313e1272c517328055d363248cbeb1be"
+			}
+		},
+		"pay": {
+			"appId": "微信小程序appid",
+			"mchId": "微信支付商户号",
+			"key": "微信支付商户key (API密钥)"
+		},
+		"notify-url": "云函数URL化http地址 + /wxpay"
+	},
+	"mp-alipay": {
+		"tokenExpiresIn": 259200,
+		"oauth": {
+			"alipay": {
+				"appid": "支付宝小程序appid",
+				"privateKey": "支付宝小程序私钥",
+				"keyType": "支付宝小程序私钥类型"
+			}
+		},
+		"pay": {
+			"appId": "支付宝小程序appid",
+			"mchId": "支付宝商户号",
+			"privateKey": "应用私钥字符串",
+			"alipayPublicKey": "支付宝公钥"
+		},
+		"notify-url": "云函数URL化http地址 + /alipay"
+	}
+}
